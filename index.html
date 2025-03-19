@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Music Player</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <p id="song-title">ive - blue heart</p>
+
+    <div>
+      <audio id="audio-player" src="IVE - Blue Heart.mp3" controls></audio>
+    </div>
+
+    <div>
+      <button type="button", id="prev">Previous</button>
+      <button type="button", id="next">Next</button>
+    </div>
+  </body>
+</html>
