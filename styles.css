@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Pixeloid Sans';
+    src: url('PixeloidSans.ttf');
+}
+
+body {
+    background-color: #DBCDFE;
+}
+
+.container {
+    margin-top: 18px;
+    text-align: center;
+}
+
+#song-title {
+    display: inline;
+    font-family: Pixeloid Sans, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #75C1C4;
+    background-color: #DBFEFF;
+    padding: 10px;
+    border: 3px solid #75C1C4;
+    border-radius: 8px;
+}
+
+#song-img {
+    text-align: center;
+    width: 240px;
+    height: 240px;
+    border-radius: 4px;
+}
+
+#progress-container {
+    margin-top: 5px;
+    text-align: center;
+}
+
+#progress-bar {
+    appearance: none;
+    width: 240px;
+    height: 6px;
+    background-color: #A288E3;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    background-image: url("progress-bar-heart.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#timestamp-group {
+    font-family: Pixeloid Sans, sans-serif;
+    font-size: 15px;
+    color: #846AC5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+span + span {
+    margin-left: 175px;
+}
+
+#btn-group {
+    display: flex;
+    justify-content: center;
+}
+
+#play-pause {
+    width: 60px;
+    height: 60px;
+}
+
+.button {
+    border: none;
+    appearance: none;
+    background-color: inherit;
+    margin: 0px 18px 0px 18px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>music player</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <p id="song-title">ive - blue heart</p>
+    </div>
+
+    <div class="container">
+      <img id="song-img" src="ive switch.png">
+    </div>
+
+    <div id="progress-container">
+      <audio id="audio-player" src="IVE - Blue Heart.mp3" autoplay></audio>
+      <input type="range", class="slider" id="progress-bar", value="0", max="1000">
+    </div>
+
+    <div id="timestamp-group">
+        <span id="progress">0:00</span> 
+        <span id="duration">0:00</span>
+    </div>
+
+    <div id="btn-group">
+      <button class="button", type="button", id="prev"><img src="previous.png"></button>
+      <img class="button", id="play-pause" src="pause-button.png">
+      <button class="button", type="button", id="next"><img src="next.png"></button>
+    </div>
+  </body>
+</html>
